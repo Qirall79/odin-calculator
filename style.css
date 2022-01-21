@@ -1,0 +1,92 @@
+*, *::after, *::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: blanchedalmond;
+    gap: 3rem;
+}
+
+#container{
+    width: 30%;
+    height: 70vh;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.buttons{
+    width: 100%;
+    height: 70%;
+    border: 2px solid black;
+}
+
+.clear{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: burlywood;
+}
+
+.digits{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operators{
+    width: 100%;
+    display: flex;
+    height: 25%;
+    background-color: burlywood;
+}
+
+
+.digit, .operator{
+    border: 2px solid black;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    height: 30%;
+    font-size: 3rem;
+    border: 3px solid black;
+    background-color: cadetblue;
+    color: white;
+}
+
+.selected{
+    background-color: black;
+    color: white;
+}
+
+p{
+    font-size: 2rem;
+    color: red;
+    visibility: hidden;
+}
